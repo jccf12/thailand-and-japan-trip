@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand & Japan 2026 Trip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- General Styles --- */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #dee2e6;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        
+        .action-item {
+            color: #d9534f;
+            font-weight: 600;
+            background-color: #f2dede;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+        }
+        
+        .quick-links a {
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* --- Itinerary Card --- */
+        .itinerary-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .itinerary-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+        .card-content h3 {
+             margin-top: 0;
+        }
+
+        /* --- Budget Section --- */
+        .splitwise-link {
+            display: block;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .splitwise-link:hover {
+            background-color: #218838;
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--secondary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdfdfd;
+        }
+        
+        .status-paid { color: #28a745; font-weight: 600; }
+        .status-pending { color: #d9534f; font-weight: 600; }
+
+        /* --- Key Info Section --- */
+        .info-section li {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .itinerary-card img { height: 200px; }
+            .header, .card-content { padding: 20px; }
+            .quick-links a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Thailand & Japan 2026: The Ultimate Trip 🌏</h1>
+            <p>Welcome to the official guide for our adventure! This page has everything you need: our day-by-day itinerary, a breakdown of costs, and all the important links and confirmation details.</p>
+            <div class="quick-links">
+                <a href="#itinerary">The Itinerary</a>
+                <a href="#budget">The Budget</a>
+                <a href="#info">Key Links</a>
+            </div>
+        </header>
+        
+        <!-- ======================= ITINERARY ======================= -->
+        <section id="itinerary">
+            <h2>The Itinerary</h2>
+            
+            <h3>Part 1: Thailand Adventure (Dec 30, 2025 – Jan 8, 2026)</h3>
+
+            <!-- Bangkok -->
+            <div class="itinerary-card">
+                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=1770&auto=format&fit=crop" alt="Bangkok skyline">
+                <div class="card-content">
+                    <h3>📍 Bangkok (Dec 30 – Jan 2)</h3>
+                    <ul>
+                        <li><span class="emoji">🏠</span><strong>Accommodation:</strong> <a href="https://www.airbnb.com/l/t0SC2eu0" target="_blank">Siam Mid-Century Modern Airbnb</a></li>
+                        <li><span class="emoji">🗺️</span><strong>Address:</strong> <a href="https://maps.app.goo.gl/qL9wXqL2eX2G4XqW6" target="_blank">125 Soi Charoen Nakhon 23, Khet Khlong San</a></li>
+                        <li><span class="emoji">➡️</span><strong>Check-in:</strong> Tue, Dec 30 from 2:00 PM</li>
+                        <li><span class="emoji">⬅️</span><strong>Check-out:</strong> Fri, Jan 2 by 12:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Khao Yai -->
+            <div class="itinerary-card">
+                <img src="https://images.unsplash.com/photo-1599395376539-d1289191e6b0?q=80&w=1932&auto=format&fit=crop" alt="Lush green hills of Khao Yai">
+                <div class="card-content">
+                    <h3>📍 Khao Yai (Jan 2 – Jan 4)</h3>
+                    <ul>
+                        <li><span class="emoji">🏡</span><strong>Accommodation:</strong> Tara's Family Farmhouse</li>
+                        <li><span class="emoji">📝</span><strong>Plan:</strong> We'll arrange a cab from Bangkok to the farmhouse for a couple of nights of relaxation in the countryside before heading back to Bangkok for our flight.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Khao Lak -->
+            <div class="itinerary-card">
+                <img src="https://images.unsplash.com/photo-1620127649565-3841a084f18e?q=80&w=1770&auto=format&fit=crop" alt="Beautiful beach in Khao Lak">
+                <div class="card-content">
+                    <h3>📍 Khao Lak (Jan 4 – Jan 6)</h3>
+                    <ul>
+                        <li><span class="emoji">✈️</span><strong class="action-item">Flight (To Be Booked):</strong> Book flights for 7 people from Bangkok (DMK or BKK) to Phuket (HKT) for Sunday, Jan 4.</li>
+                        <li><span class="emoji">🏨</span><strong>Accommodation:</strong> <a href="https://www.agoda.com/seaview-resort-khao-lak-sha-extra-plus_2/hotel/khao-lak-th.html" target="_blank">Seaview Resort Khao Lak</a></li>
+                        <li><span class="emoji">➡️</span><strong>Check-in:</strong> Sun, Jan 4</li>
+                        <li><span class="emoji">⬅️</span><strong>Check-out:</strong> Tue, Jan 6</li>
+                        <li><span class="emoji">⛵️</span><strong>Activity:</strong> Plan for a one-day boat tour for some island hopping!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Khao Sok -->
+            <div class="itinerary-card">
+                <img src="https://images.unsplash.com/photo-1589793463342-3a8308f7b7e2?q=80&w=1803&auto=format&fit=crop" alt="Limestone karsts in Khao Sok lake">
+                <div class="card-content">
+                    <h3>📍 Khao Sok (Jan 6 – Jan 8)</h3>
+                    <ul>
+                        <li><span class="emoji">🛺</span><strong class="action-item">Transport (To Be Booked):</strong> Arrange a van or bus transfer from Khao Lak to Khao Sok for Tuesday, Jan 6.</li>
+                        <li><span class="emoji">🏕️</span><strong>Accommodation:</strong> <a href="https://www.agoda.com/khaosok-boutique-camps/hotel/suratthani-th.html" target="_blank">Khaosok Boutique Camps</a></li>
+                        <li><span class="emoji">➡️</span><strong>Check-in:</strong> Tue, Jan 6</li>
+                        <li><span class="emoji">⬅️</span><strong>Check-out:</strong> Thu, Jan 8</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Part 2: Japan Expedition (Jan 8 – Jan 18, 2026)</h3>
+
+            <!-- Travel Day to Japan -->
+            <div class="itinerary-card">
+                 <img src="https://images.unsplash.com/photo-1570560183185-3c12662d5612?q=80&w=1769&auto=format&fit=crop" alt="Airplane wing over clouds">
+                <div class="card-content">
+                    <h3>✈️ Travel Day to Japan (Jan 8 – Jan 9)</h3>
+                    <ul>
+                        <li><span class="emoji">🛫</span><strong>12:55 PM:</strong> Flight 1 departs Surat Thani (URT) → Bangkok (DMK) on AirAsia FD 3240. (Arrives 2:15 PM)</li>
+                        <li><span class="emoji">‼️</span><strong>Evening:</strong> CRITICAL TRANSFER! We must travel from Don Mueang Airport (DMK) to Suvarnabhumi Airport (BKK).</li>
+                        <li><span class="emoji">🛬</span><strong>11:15 PM:</strong> Flight 2 departs Bangkok (BKK) → Tokyo (HND) on Thai Airways TG 682. (Arrives 6:55 AM on Jan 9)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hakone -->
+            <div class="itinerary-card">
+                <img src="https://images.unsplash.com/photo-1547366921-4a68a53c3e8a?q=80&w=1770&auto=format&fit=crop" alt="Mount Fuji view from Hakone">
+                <div class="card-content">
+                    <h3>📍 Hakone (Jan 9 – Jan 11)</h3>
+                    <ul>
+                         <li><span class="emoji">🏠</span><strong>Accommodation:</strong> <a href="https://www.airbnb.com/l/hhzoSFe3?s=67&unique_share_id=4fcc0b14-ee8b-406f-ad4a-008c33cb6ef4" target="_blank">HAKONE Private Natural hot spring TOGA</a></li>
+                        <li><span class="emoji">➡️</span><strong>Check-in:</strong> Fri, Jan 9 from 4:00 PM</li>
+                        <li><span class="emoji">⬅️</span><strong>Check-out:</strong> Sun, Jan 11 by 12:00 PM</li>
+                        <li><span class="emoji">♨️</span><strong>Plan:</strong> Our Airbnb has its own private onsen! We'll also do the classic "Hakone Loop" (cable car, ropeway, boat cruise). For an even bigger onsen experience, we can visit <a href="https://www.hakoneyuryo.jp/english/" target="_blank">Hakone Yuryo</a>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Furano -->
+            <div class="itinerary-card">
+                <img src="https://images.unsplash.com/photo-1546788229-34c76fed0a31?q=80&w=1770&auto=format&fit=crop" alt="Snowy landscape in Furano, Hokkaido">
+                <div class="card-content">
+                    <h3>📍 Furano, Hokkaido (Jan 11 – Jan 14)</h3>
+                     <ul>
+                        <li><span class="emoji">✈️</span><strong>5:05 PM:</strong> Depart Tokyo (HND) → Asahikawa (AKJ) on JAL 557. (Arrives 6:50 PM)</li>
+                        <li><span class="emoji">🏠</span><strong>Accommodation:</strong> <a href="https://www.airbnb.com/l/uyCaLjBu?s=67&unique_share_id=fcc9b93f-b3a8-4cb8-92ca-26b4f76658c3" target="_blank">Home in Furano (SHEDs)</a></li>
+                        <li><span class="emoji">🗺️</span><strong>Address:</strong> <a href="https://maps.app.goo.gl/g6tqD5eL79j4N6yV9" target="_blank">738 Kitaōnuma, Furano, Hokkaido</a></li>
+                        <li><span class="emoji">➡️</span><strong>Check-in:</strong> Sun, Jan 11 from 4:00 PM</li>
+                        <li><span class="emoji">⬅️</span><strong>Check-out:</strong> Wed, Jan 14 by 10:00 AM</li>
+                        <li><span class="emoji">🚗</span><strong>Car Rental:</strong> Pick up our Minivan from Hertz at Asahikawa Airport (AKJ) on arrival.</li>
+                        <li><span class="emoji">⛷️</span><strong>Plan:</strong> Two full days of skiing and exploring Furano!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tokyo -->
+            <div class="itinerary-card">
+                <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1770&auto=format&fit=crop" alt="Shibuya Crossing in Tokyo">
+                <div class="card-content">
+                    <h3>📍 Tokyo (Jan 14 – Jan 18)</h3>
+                    <ul>
+                        <li><span class="emoji">✈️</span><strong>1:35 PM:</strong> Depart Asahikawa (AKJ) → Tokyo (HND) on JAL 554. (Arrives 3:25 PM)</li>
+                        <li><span class="emoji">👋</span><strong>Tara arrives and joins the group!</strong></li>
+                        <li><span class="emoji">🏠</span><strong>Accommodation:</strong> <a href="https://www.airbnb.com/l/5ORuzCYT?s=67&unique_share_id=d70d4a49-b9b0-442a-9a84-2a992aa7b94b" target="_blank">Temple Stay/Zen & Art Airbnb</a></li>
+                        <li><span class="emoji">🗺️</span><strong>Address:</strong> <a href="https://maps.app.goo.gl/bM6H9Y6G2F4s1wQ67" target="_blank">3-chōme-10-12 Motoazabu, Minato City, Tokyo</a></li>
+                        <li><span class="emoji">➡️</span><strong>Check-in:</strong> Wed, Jan 14 from 4:00 PM</li>
+                        <li><span class="emoji">⬅️</span><strong>Check-out:</strong> Sun, Jan 18 by 10:00 AM</li>
+                        <li><span class="emoji">📝</span><strong>Plan:</strong> Explore the incredible food, culture, and shopping of Tokyo at a relaxed pace before we fly home.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ======================= BUDGET ======================= -->
+        <section id="budget">
+            <h2>The Budget Breakdown</h2>
+            <p>This is an estimate of the major pre-booked costs. Daily spending is separate. All expenses are tracked in Splitwise!</p>
+            <a href="https://www.splitwise.com/join/x5wwkjNkxjK+cpgae?v=s" class="splitwise-link" target="_blank">Join our Splitwise Group Here!</a>
+
+            <h3>For the Core 6 (Juan, Aaron, Sofi, Charlie, Ram, and Memo*)</h3>
+            <p><small>*Memo's Tokyo lodging cost is adjusted for his shorter 2-night stay.</small></p>
+            <table>
+                <tr><th>Item</th><th>Cost Per Person (USD)</th><th>Status</th></tr>
+                <tr><td><strong>Booked Items Total</strong></td><td><strong>~$1,765</strong></td><td class="status-paid">✅ Paid</td></tr>
+                <tr><td><em>- Thailand Lodging & Flights</em></td><td><em>$280</em></td><td></td></tr>
+                <tr><td><em>- Flights: BKK → HND & HND ↔ AKJ</em></td><td><em>$541</em></td><td></td></tr>
+                <tr><td><em>- Japan Lodging (Hakone, Furano)</em></td><td><em>$342</em></td><td></td></tr>
+                <tr><td><em>- Hokkaido Car Rental</em></td><td><em>$65</em></td><td></td></tr>
+                <tr><td><em>- Tokyo Lodging</em></td><td><em>$341 (Memo: $170)</em></td><td></td></tr>
+                <tr><td><strong>Estimated Remaining Items</strong></td><td><strong>~$117</strong></td><td class="status-pending">⚠️ Pending</td></tr>
+                <tr><td><em>- Flight: BKK → HKT</em></td><td><em>$65</em></td><td></td></tr>
+                <tr><td><em>- Transport: Koh Lak → Khao Sok</em></td><td><em>$14</em></td><td></td></tr>
+                <tr><td><em>- Hakone Freepass</em></td><td><em>$38</em></td><td></td></tr>
+                <tr><td><strong>ESTIMATED GRAND TOTAL</strong></td><td><strong>~$1,882</strong></td><td></td></tr>
+            </table>
+
+            <h3>For Tara (Joining for Thailand and Tokyo)</h3>
+             <table>
+                <tr><th>Item</th><th>Cost Per Person (USD)</th><th>Status</th></tr>
+                <tr><td><strong>Booked Items Total</strong></td><td><strong>~$657</strong></td><td class="status-paid">✅ Paid</td></tr>
+                <tr><td><em>- Thailand Lodging & Flights</em></td><td><em>$341</em></td><td></td></tr>
+                <tr><td><em>- Tokyo Lodging</em></td><td><em>$316</em></td><td></td></tr>
+                <tr><td><strong>Estimated Remaining Items</strong></td><td><strong>~$79</strong></td><td class="status-pending">⚠️ Pending</td></tr>
+                <tr><td><em>- Flight: BKK → HKT</em></td><td><em>$65</em></td><td></td></tr>
+                <tr><td><em>- Transport: Koh Lak → Khao Sok</em></td><td><em>$14</em></td><td></td></tr>
+                <tr><td><strong>ESTIMATED GRAND TOTAL</strong></td><td><strong>~$736</strong></td><td></td></tr>
+            </table>
+
+            <h3>Daily Spending Money (Not Included Above)</h3>
+            <ul>
+                <li><span class="emoji">🍜</span><strong>Food & Drinks:</strong> $60 - $100 per day</li>
+                <li><span class="emoji">🎟️</span><strong>Activities:</strong>
+                    <ul>
+                        <li><strong>Skiing in Furano (2 days):</strong> Budget ~$250 total for lift passes & gear rental.</li>
+                        <li><strong>Sightseeing/Temples:</strong> ~$20 - $40 per day.</li>
+                    </ul>
+                </li>
+                <li><span class="emoji">🚇</span><strong>Local Transport (Tokyo/Hakone):</strong> ~$15 per day.</li>
+                <li><span class="emoji">💸</span><strong>Recommended Japan Spending Money:</strong> A good budget would be **$1,200 - $1,800 per person** for the 10 days.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ======================= INFO & LINKS ======================= -->
+        <section id="info">
+            <h2>Key Information & Links</h2>
+            <h3>Flight Confirmations</h3>
+            <ul class="info-section">
+                <li><strong>URT → DMK:</strong> AirAsia, Booking # H8NV9P</li>
+                <li><strong>BKK → HND:</strong> Thai Airways, Booking # ES7LJ9</li>
+                <li><strong>HND ↔ AKJ:</strong> Japan Airlines, Booking # F9FED7</li>
+            </ul>
+
+            <h3>Accommodation Links (Join the Trip!)</h3>
+            <ul class="info-section">
+                <li><strong>Bangkok Airbnb:</strong> <a href="https://www.airbnb.com/l/t0SC2eu0" target="_blank">Guest Invite</a></li>
+                <li><strong>Hakone Airbnb:</strong> <a href="https://www.airbnb.com/l/hhzoSFe3?s=67&unique_share_id=4fcc0b14-ee8b-406f-ad4a-008c33cb6ef4" target="_blank">Guest Invite</a></li>
+                <li><strong>Furano Airbnb:</strong> <a href="https://www.airbnb.com/l/uyCaLjBu?s=67&unique_share_id=fcc9b93f-b3a8-4cb8-92ca-26b4f76658c3" target="_blank">Guest Invite</a></li>
+                <li><strong>Tokyo Airbnb:</strong> <a href="https://www.airbnb.com/l/5ORuzCYT?s=67&unique_share_id=d70d4a49-b9b0-442a-9a84-2a992aa7b94b" target="_blank">Guest Invite</a></li>
+                <li><strong>Khao Lak Resort:</strong> <a href="https://www.agoda.com/seaview-resort-khao-lak-sha-extra-plus_2/hotel/khao-lak-th.html" target="_blank">Agoda Page</a></li>
+                <li><strong>Khao Sok Resort:</strong> <a href="https://www.agoda.com/khaosok-boutique-camps/hotel/suratthani-th.html" target="_blank">Agoda Page</a></li>
+            </ul>
+
+            <h3>Car Rental Confirmation</h3>
+            <ul class="info-section">
+                 <li><strong>Hokkaido:</strong> Hertz, Confirmation # L3220790419</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
