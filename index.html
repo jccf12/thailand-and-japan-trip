@@ -89,6 +89,12 @@
             border-radius: 5px;
             display: inline-block;
         }
+        
+        .flight-guide li {
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+        }
 
         /* --- Header --- */
         .header {
@@ -158,6 +164,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            font-size: 0.95rem;
         }
 
         th, td {
@@ -195,6 +202,8 @@
                 display: block;
                 margin-bottom: 10px;
             }
+            table { font-size: 0.8rem; }
+            th, td { padding: 8px; }
         }
     </style>
 </head>
@@ -206,11 +215,52 @@
             <h1>Thailand & Japan 2026: The Ultimate Trip 🌏</h1>
             <p>Welcome to the official guide for our adventure! This page has everything you need: our day-by-day itinerary, a breakdown of costs, and all the important links and confirmation details.</p>
             <div class="quick-links">
+                <a href="#joining">Joining the Trip?</a>
                 <a href="#itinerary">The Itinerary</a>
                 <a href="#budget">The Budget</a>
                 <a href="#info">Key Links</a>
             </div>
         </header>
+
+        <!-- ======================= JOINING GUIDE ======================= -->
+        <section id="joining">
+            <h2>Joining the Trip? A Guide for Our 8th Traveler</h2>
+            <p>Hey! If you're thinking of joining us, here’s everything you need to know to get booked and ready. The more the merrier!</p>
+            
+            <h3>✈️ Step 1: Book Your Flights</h3>
+            <p>You'll need to book these flights separately. We recommend booking soon, as prices change! The goal is to be on the same flights as us. Here are the details:</p>
+            <ul class="flight-guide">
+                <li><strong>Flight 1: Bangkok (DMK) → Phuket (HKT)</strong><br>
+                    <strong>Date:</strong> Jan 4, 2026<br>
+                    <strong>Airline:</strong> <a href="https://www.airasia.com" target="_blank">AirAsia</a><br>
+                    <strong>Flight Number:</strong> FD 3091<br>
+                    <strong>Departs:</strong> 11:20 AM from DMK
+                </li>
+                <li><strong>Flight 2: Surat Thani (URT) → Bangkok (DMK)</strong><br>
+                    <strong>Date:</strong> Jan 8, 2026<br>
+                    <strong>Airline:</strong> <a href="https://www.airasia.com" target="_blank">AirAsia</a><br>
+                    <strong>Flight Number:</strong> FD 3240<br>
+                    <strong>Departs:</strong> 12:55 PM from URT
+                </li>
+                 <li><strong>Flight 3: Bangkok (BKK) → Tokyo (HND)</strong><br>
+                    <strong>Date:</strong> Jan 8, 2026<br>
+                    <strong>Airline:</strong> <a href="https://www.thaiairways.com" target="_blank">Thai Airways</a><br>
+                    <strong>Flight Number:</strong> TG 682<br>
+                    <strong>Departs:</strong> 11:15 PM from BKK
+                </li>
+                 <li><strong>Flight 4 & 5: Tokyo (HND) ↔ Asahikawa (AKJ)</strong><br>
+                    <strong>Airline:</strong> <a href="https://www.jal.co.jp/jp/en/" target="_blank">Japan Airlines (JAL)</a><br>
+                    <strong>HND→AKJ:</strong> Jan 11, Flight JAL 557, departs 5:05 PM<br>
+                    <strong>AKJ→HND:</strong> Jan 14, Flight JAL 554, departs 1:35 PM
+                </li>
+            </ul>
+
+            <h3>🏠 Step 2: Accommodations</h3>
+            <p>The good news is all our places are booked and should be able to fit one more person. You can see all the stays using the Airbnb Guest Invite links in the <a href="#info">Key Information & Links</a> section below.</p>
+            
+            <h3>💰 Step 3: The Budget</h3>
+            <p>Adding an 8th person lowers the cost for everyone! Check out the updated budget table below to see the new per-person prices. Once you're in, you can join our <a href="https://www.splitwise.com/join/x5wwkjNkxjK+cpgae?v=s" target="_blank">Splitwise Group</a> to settle up.</p>
+        </section>
         
         <!-- ======================= ITINERARY ======================= -->
         <section id="itinerary">
@@ -239,7 +289,7 @@
                     <h3>📍 Khao Yai (Jan 2 – Jan 4)</h3>
                     <ul>
                         <li><span class="emoji">🏡</span><strong>Accommodation:</strong> Tara's Family Farmhouse</li>
-                        <li><span class="emoji">📝</span><strong>Plan:</strong> We'll rent a van in Bangkok to drive to the farmhouse for a couple of nights of relaxation in the countryside before heading back to Bangkok for our flight.</li>
+                        <li><span class="emoji">📝</span><strong>Plan:</strong> We'll rent a van in Bangkok to drive to the farmhouse for a couple of nights of relaxation in the countryside. We'll leave for Don Mueang Airport (DMK) from here on Jan 4.</li>
                     </ul>
                 </div>
             </div>
@@ -249,8 +299,8 @@
                 <img src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/236/2024/07/10043528/Sandy-Beach.jpg" alt="Beautiful beach in Khao Lak">
                 <div class="card-content">
                     <h3>📍 Khao Lak (Jan 4 – Jan 6)</h3>
-                    <ul>
-                        <li><span class="emoji">✈️</span><strong class="action-item">Flight (To Be Booked):</strong> Book flights for 7 people from Bangkok (DMK or BKK) to Phuket (HKT) for Sunday, Jan 4.</li>
+                     <ul>
+                        <li><span class="emoji">✈️</span><strong>11:20 AM:</strong> Depart Bangkok (DMK) → Phuket (HKT) on AirAsia FD 3091. (Arrives 12:50 PM)</li>
                         <li><span class="emoji">🏨</span><strong>Accommodation:</strong> <a href="https://www.agoda.com/seaview-resort-khao-lak-sha-extra-plus_2/hotel/khao-lak-th.html" target="_blank">Seaview Resort Khao Lak</a></li>
                         <li><span class="emoji">➡️</span><strong>Check-in:</strong> Sun, Jan 4</li>
                         <li><span class="emoji">⬅️</span><strong>Check-out:</strong> Tue, Jan 6</li>
@@ -343,33 +393,31 @@
             <p>This is an estimate of the major pre-booked costs. Daily spending is separate. All expenses are tracked in Splitwise!</p>
             <a href="https://www.splitwise.com/join/x5wwkjNkxjK+cpgae?v=s" class="splitwise-link" target="_blank">Join our Splitwise Group Here!</a>
 
-            <h3>For the Core 6 (Juan, Aaron, Sofi, Charlie, Ram, and Memo*)</h3>
-            <p><small>*Memo's Tokyo lodging cost is adjusted for his shorter 2-night stay.</small></p>
+            <h3>For the Core 6 (Full Trip)</h3>
+            <p><strong>Travelers:</strong> Juan, Aaron, Sofi, Memo, Charlie, Ram</p>
             <table>
-                <tr><th>Item</th><th>Cost Per Person (USD)</th><th>Status</th></tr>
-                <tr><td><strong>Booked Items Total</strong></td><td><strong>~$1,867</strong></td><td class="status-paid">✅ Paid</td></tr>
-                <tr><td><em>- Thailand Lodging & Flights</em></td><td><em>$280</em></td><td></td></tr>
-                <tr><td><em>- Flights: BKK → HND & HND ↔ AKJ</em></td><td><em>$541</em></td><td></td></tr>
-                <tr><td><em>- Japan Lodging (Hakone, Furano)</em></td><td><em>$444</em></td><td></td></tr>
-                <tr><td><em>- Hokkaido Car Rental</em></td><td><em>$65</em></td><td></td></tr>
-                <tr><td><em>- Tokyo Lodging</em></td><td><em>$341 (Memo: $170)</em></td><td></td></tr>
-                <tr><td><strong>Estimated Remaining Items</strong></td><td><strong>~$117</strong></td><td class="status-pending">⚠️ Pending</td></tr>
-                <tr><td><em>- Flight: BKK → HKT</em></td><td><em>$65</em></td><td></td></tr>
-                <tr><td><em>- Transport: Koh Lak → Khao Sok</em></td><td><em>$14</em></td><td></td></tr>
-                <tr><td><em>- Hakone Freepass</em></td><td><em>$38</em></td><td></td></tr>
-                <tr><td><strong>ESTIMATED GRAND TOTAL</strong></td><td><strong>~$1,984</strong></td><td></td></tr>
+                <tr><th>Item</th><th>Cost (Current)</th><th>Cost (if 8 join)</th><th>Status</th></tr>
+                <tr><td><strong>Booked Items Total</strong></td><td><strong>~$1,800</strong></td><td><strong>~$1,556</strong></td><td class="status-paid">✅ Paid</td></tr>
+                <tr><td><em>- Thailand Portion</em></td><td><em>$434</em></td><td><em>$380</em></td><td></td></tr>
+                <tr><td><em>- Hakone/Furano Portion</em></td><td><em>$1050</em></td><td><em>$899</em></td><td></td></tr>
+                <tr><td><em>- Tokyo Portion*</em></td><td><em>$316 (Memo: $158)</em></td><td><em>$277 (Memo: $139)</em></td><td></td></tr>
+                <tr><td><strong>Estimated Remaining Items</strong></td><td><strong>~$52</strong></td><td><strong>~$49</strong></td><td class="status-pending">⚠️ Pending</td></tr>
+                <tr><td><em>- Transport: Koh Lak → Khao Sok</em></td><td><em>$14</em></td><td><em>$13</em></td><td></td></tr>
+                <tr><td><em>- Hakone Freepass</em></td><td><em>$38</em></td><td><em>$36</em></td><td></td></tr>
+                <tr><td><strong>ESTIMATED GRAND TOTAL</strong></td><td><strong>~$1,852</strong></td><td><strong>~$1,605</strong></td><td></td></tr>
             </table>
+            <p><small>*Memo's Tokyo cost is for 2 of 4 nights. The per-person cost for others in Tokyo will be slightly higher to cover the difference.</small></p>
 
-            <h3>For Tara (Joining for Thailand and Tokyo)</h3>
+
+            <h3>For Tara (Thailand & Tokyo only)</h3>
              <table>
-                <tr><th>Item</th><th>Cost Per Person (USD)</th><th>Status</th></tr>
-                <tr><td><strong>Booked Items Total</strong></td><td><strong>~$657</strong></td><td class="status-paid">✅ Paid</td></tr>
-                <tr><td><em>- Thailand Lodging & Flights</em></td><td><em>$341</em></td><td></td></tr>
-                <tr><td><em>- Tokyo Lodging</em></td><td><em>$316</em></td><td></td></tr>
-                <tr><td><strong>Estimated Remaining Items</strong></td><td><strong>~$79</strong></td><td class="status-pending">⚠️ Pending</td></tr>
-                <tr><td><em>- Flight: BKK → HKT</em></td><td><em>$65</em></td><td></td></tr>
-                <tr><td><em>- Transport: Koh Lak → Khao Sok</em></td><td><em>$14</em></td><td></td></tr>
-                <tr><td><strong>ESTIMATED GRAND TOTAL</strong></td><td><strong>~$736</strong></td><td></td></tr>
+                <tr><th>Item</th><th>Cost (Current)</th><th>Cost (if 8 join)</th><th>Status</th></tr>
+                <tr><td><strong>Booked Items Total</strong></td><td><strong>~$750</strong></td><td><strong>~$657</strong></td><td class="status-paid">✅ Paid</td></tr>
+                <tr><td><em>- Thailand Portion</em></td><td><em>$434</em></td><td><em>$380</em></td><td></td></tr>
+                <tr><td><em>- Tokyo Portion</em></td><td><em>$316</em></td><td><em>$277</em></td><td></td></tr>
+                <tr><td><strong>Estimated Remaining Items</strong></td><td><strong>~$14</strong></td><td><strong>~$13</strong></td><td class="status-pending">⚠️ Pending</td></tr>
+                <tr><td><em>- Transport: Koh Lak → Khao Sok</em></td><td><em>$14</em></td><td><em>$13</em></td><td></td></tr>
+                <tr><td><strong>ESTIMATED GRAND TOTAL</strong></td><td><strong>~$764</strong></td><td><strong>~$670</strong></td><td></td></tr>
             </table>
 
             <h3>Daily Spending Money (Not Included Above)</h3>
@@ -394,6 +442,7 @@
             <h3>Flight Confirmations</h3>
             <ul class="info-section">
                 <li><strong>URT → DMK:</strong> AirAsia, Booking # H8NV9P</li>
+                <li><strong>BKK → HKT (Phuket):</strong> AirAsia, Booking # YEV88A</li>
                 <li><strong>BKK → HND:</strong> Thai Airways, Booking # ES7LJ9</li>
                 <li><strong>HND ↔ AKJ:</strong> Japan Airlines, Booking # F9FED7</li>
             </ul>
